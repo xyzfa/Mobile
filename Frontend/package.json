@@ -4,15 +4,12 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "node scripts/dev-with-vision.mjs",
-    "dev:vite": "vite --port 8080",
-    "dev:vision": "node scripts/dev-with-vision.mjs",
+    "dev": "vite",
     "build": "NODE_ENV=development vite build --mode development",
     "build:prod": "vite build",
     "check": "pnpm lint && pnpm exec tsc --noEmit",
     "lint": "eslint .",
     "preview": "vite preview",
-    "vision:server": "node --env-file=.env server/visual-search.mjs",
     "pInstall": "pnpm install"
   },
   "dependencies": {
